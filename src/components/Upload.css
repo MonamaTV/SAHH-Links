@@ -1,0 +1,22 @@
+.times {
+  color: red;
+  font-size: 18px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.card-music {
+  display: flex;
+  margin: 4px 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card-music a {
+  text-decoration: none;
+  color: #fff;
+}
+.img-review img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}

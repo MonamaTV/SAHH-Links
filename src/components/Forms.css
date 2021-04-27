@@ -1,0 +1,130 @@
+.form-container {
+  box-shadow: 1rem 0.5rem 2rem #00000017;
+  margin: 150px auto;
+  border-radius: 1px;
+  width: 35rem;
+  background-color: #70b670;
+  justify-self: center;
+  padding: 80px 30px;
+  align-self: center;
+}
+.form-container form {
+  width: 100%;
+}
+.form-control {
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  height: calc(3rem + 1px) !important;
+}
+input[type="file"]::-webkit-file-upload-button {
+  outline: none;
+  background-color: #005f00 !important;
+  border: none !important;
+  border-radius: 3px;
+  height: calc(2.3rem + 1px) !important;
+  padding: 2px;
+  color: #fff;
+}
+
+textarea.form-control {
+  width: 100%;
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  height: 100px !important;
+}
+.form-floating > label {
+  padding: 0.7rem 0.75rem !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+select.my-select-input {
+  font-weight: 400;
+  font-size: 15px;
+  height: 49.7px;
+  border: none;
+  background-color: #005f00;
+  border-radius: 3px;
+  width: 25%;
+  outline: none;
+  color: #fff;
+}
+input.my-control-input {
+  border: none;
+  padding: 0 10px;
+  outline: none;
+  border-radius: 0 0.25rem 0.25rem 0 !important;
+  width: 75%;
+}
+.form-button button {
+  background-color: #005f00;
+  color: #fff;
+  border: none;
+  outline: none !important;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+}
+.form-button button:active {
+  transition: all ease-in-out 200ms;
+  transform: translateY(-5px);
+}
+.form-sign button {
+  border-radius: 5px;
+  background-color: transparent;
+  color: #e0dede;
+  border: none;
+}
+.google-icon {
+  color: #fff;
+  height: 1em;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #4285f4;
+}
+/* Hide label */
+.hide-label {
+  display: none;
+}
+
+.loading-btn {
+  margin: 0 !important;
+  text-align: center;
+  border-top: 4px solid salmon;
+  border-left: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid salmon;
+  border-right: 4px solid rgb(255, 255, 255);
+
+  width: 20px;
+  height: 20px;
+  /* margin-left: 10px; */
+  padding: 0px;
+  border-radius: 50%;
+  animation: motion 0.6s linear infinite;
+}
+
+@keyframes motion {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+/* Testing loading button */

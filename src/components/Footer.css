@@ -1,0 +1,30 @@
+.my-footer {
+  padding: 10px 20px;
+  color: rgb(3, 39, 3);
+  background-color: #f4f4f450 !important;
+}
+.list {
+  list-style: none;
+}
+.list .link {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(3, 39, 3);
+}
+.list .link:hover {
+  text-decoration: underline;
+}
+.follow-up {
+  margin-bottom: 15px;
+}
+.follow-up a,
+.contact a {
+  text-decoration: none;
+}
+.footer-card {
+  margin: 10px;
+}
+.footer-card h4 {
+  color: rgb(4, 88, 4);
+}

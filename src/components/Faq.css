@@ -1,0 +1,35 @@
+.faq {
+  background-color: rgba(0, 128, 0, 0.548);
+  padding-top: 100px;
+}
+.faq-image {
+  display: flex;
+  justify-content: center;
+}
+.faq-image img {
+  width: 70%;
+  padding: 20px;
+}
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  height: 80%;
+}
+.faq-accordion {
+  padding: 10px;
+  margin: 10px;
+}
+.faq-accordion button {
+  border: none;
+  outline: none;
+  background: rgba(0, 128, 0, 0.548);
+  color: #fff;
+  padding: 10px;
+}
+.faq-accordion .answer {
+  padding: 10px;
+}

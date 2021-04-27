@@ -1,0 +1,41 @@
+.how-it-works {
+  margin: 50px auto;
+}
+.section-card {
+  min-height: 230px;
+}
+.how-it-works img {
+  width: 30%;
+  height: 40%;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+  color: rgb(4, 88, 4);
+}
+.how-it-works .section-card {
+  padding: 1em 3em;
+  text-align: center;
+  margin: 1em 0em;
+  border-radius: 3px;
+  align-items: center;
+  background: #fff !important;
+  color: rgb(3, 39, 3);
+  width: 100%;
+  box-shadow: 0px 1px 10px 5px rgba(71, 71, 71, 0.034);
+}
+.how-it-works .section-card:hover {
+  transition: all ease-in 0.5s;
+  color: #fff;
+  background-color: rgba(0, 128, 0, 0.548) !important;
+}
+.how-it-works h4 {
+  font-weight: 100;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.how-it-works p {
+  font-size: 13px;
+}

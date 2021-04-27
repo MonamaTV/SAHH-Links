@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed !important;
+  top: 0;
+  height: 100px;
+  z-index: 10;
+  width: 100%;
+}
+.navback {
+  transition: all ease-in 0.1s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+    inset 0 -0.7px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.navback .nav-link {
+  color: rgb(50, 88, 6);
+  text-transform: uppercase;
+}
+.navbar-toggler {
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+}
+.nav-link {
+  text-transform: uppercase;
+  color: rgb(63, 119, 0);
+  margin: 0 10px;
+  font-size: 13px;
+}
+.navbar-brand {
+  border-radius: 4px;
+  color: rgb(63, 119, 0) !important;
+  padding: 5px;
+
+  margin: 0 10px !important;
+}
+.navbar-brand span {
+  border-bottom: salmon 4px solid;
+  padding: 1px;
+  border-top: salmon 4px solid;
+}
+.active-link {
+  border-radius: 3px;
+  color: #fff !important;
+  background-color: green;
+}

@@ -1,0 +1,159 @@
+.link-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  width: 350px !important;
+  border: none;
+  padding: 0 !important;
+  display: block;
+  box-shadow: 0 0 12px #2f501142;
+  margin: 0;
+}
+.media-content,
+.card {
+  background: #fff !important;
+}
+.media-content {
+  box-shadow: 0 0 12px #2f501142;
+  margin: 10px;
+  width: 350px;
+  padding: 20px;
+}
+.media-content a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+.media-content a:hover {
+  background-color: rgb(219, 219, 219);
+  border-radius: 2px;
+}
+
+.card img {
+  border-radius: 0 0 15px 15px;
+}
+.artist-name {
+  color: rgb(63, 119, 0);
+}
+.music-info,
+.artist-name {
+  text-transform: capitalize;
+}
+.icons {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.media-links p,
+.media-content p {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.whatsapp {
+  color: #25d366;
+}
+.facebook {
+  color: #4267b2;
+}
+.twitter {
+  color: #1da1f2;
+}
+.youtube {
+  color: #ff0000;
+}
+.spotify {
+  color: #1db954;
+}
+.applemusic {
+  color: #1b0614;
+}
+.deezer {
+  color: #e473b3;
+}
+.itunes {
+  color: #ea4cc0;
+}
+.soundcloud {
+  color: #ff7700;
+}
+.slikour {
+  width: 20px;
+}
+.clipboard {
+  color: rgb(133, 105, 94);
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: salmon;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+.check-badge {
+  width: 16px;
+  transform: translateY(-2px);
+}
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
