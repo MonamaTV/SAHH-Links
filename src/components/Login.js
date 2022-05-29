@@ -101,6 +101,7 @@ function Login() {
                             className="form-control" 
                             placeholder="Passsword" />
                         <label htmlFor="floatingPassword">Password</label>
+                        {/* Forgot password */}
                         <small><a href="/changepassword">Forgot Password?</a></small>
                     </div>
                     <div className="form-button mb-3">
@@ -110,6 +111,7 @@ function Login() {
                         {
                             errorMessage && <small className="text-danger">{errorMessage}<br /></small>
                         }
+                        {/* Register */}
                         <Link to="/register">
                             <small>New here? Register</small>
                         </Link>

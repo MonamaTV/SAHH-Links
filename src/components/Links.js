@@ -5,7 +5,12 @@ function Links({links, onDelete}) {
         <div> 
             {//Rendering the links added to the list before they get upload to the database
                 links.map((link) => (
-                    <Link link={link} key={link.id} onDelete={onDelete} />
+                    <Link 
+                        className="link-preview"
+                        link={link} 
+                        key={link.id} 
+                        onDelete={onDelete} 
+                    />
                 ))
             }
         </div>

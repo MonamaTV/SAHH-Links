@@ -1,0 +1,55 @@
+.user-details {
+  margin: 20px 10px;
+}
+.popups {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-img-floating img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.user-img-floating label {
+  cursor: pointer !important;
+  position: relative !important;
+  left: -70px !important;
+  pointer-events: visible !important;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.form-floating input[type="text"],
+.form-floating input[type="email"],
+.form-floating textarea {
+  background-color: #c9d3be;
+  border: none !important;
+}
+.form-floating textarea {
+  resize: both;
+  height: 200px !important;
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+  background-color: #c9d3be;
+  border: none !important;
+}
+.form-floating button {
+  background-color: #6f7a6b;
+  width: 100%;
+  padding: 0.8rem 0.75rem;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+}
+#userImage {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}

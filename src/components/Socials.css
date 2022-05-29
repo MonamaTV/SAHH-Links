@@ -1,0 +1,18 @@
+.supported {
+  margin: 5px;
+}
+.supported * {
+  margin: 15px;
+}
+.supported .tiktok {
+  color: #000;
+}
+.supported .facebook {
+  color: #4267b2;
+}
+.supported .twitter {
+  color: #1da1f2;
+}
+.supported .instagram {
+  color: #c13584;
+}

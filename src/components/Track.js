@@ -1,15 +1,9 @@
 import React from 'react';
 import './Track.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, 
-         faTwitter, 
-         faWhatsapp,
-        } 
-from '@fortawesome/free-brands-svg-icons';
 
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
 import firebase from "firebase";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash, faLink } from '@fortawesome/free-solid-svg-icons';
 function Track({doc}) {
 
     const deleteMusic = (id, linksID, imgURL) => {
@@ -43,39 +37,21 @@ function Track({doc}) {
             console.error(error);
         })
     }
+    // c    onsole.log(doc);
+   
     return (
-        <div className="track-card">
-            <div className="track-image">
-                <div className="delete-icon">
-                    <FontAwesomeIcon  
-                        icon={faTrash}
-                        onClick={() => deleteMusic(doc.id, doc.linksID, doc.imgURL)} 
-                        className="icons " 
-                        alt="Delete icon"/>
-                </div>
-                <img src={doc?.imgURL} alt="Cover art" />
-            </div>
-            <Link to={`/link/${doc?.linksID}`} className="track-bio">
-                <h5 className="music-name">{doc?.name}</h5>
-                <small>{doc?.description}</small>
-                <div className="media-links mt-1">
-                    {/* <p>Share</p>  */}
-                    <FontAwesomeIcon  
-                        icon={faWhatsapp} 
-                        className="icons whatsapp" 
-                        alt="WhatsApp icon"/>
-                    <FontAwesomeIcon  
-                        icon={faFacebook} 
-                        className="icons facebook" 
-                        alt="Facebook icon"/>
-                    <FontAwesomeIcon  
-                        icon={faTwitter} 
-                        className="icons twitter" 
-                        alt="Twitter icon" />
-                </div>
-            </Link>
-           
-        </div>
+        <tr className="track-information">
+            <td>
+                <img src={doc?.imgURL} alt={doc?.description} />
+            </td>
+            <td className="music-name">{doc?.name}</td>
+            <td className="music-description">{doc?.description.slice(0, 50)}</td>
+            <td>{"20 July"}</td>
+            <td className="link-actions">
+                <a target="_blank" href={`/link/${doc?.linksID}`}><FontAwesomeIcon className="view" icon={faLink} /></a>
+                <FontAwesomeIcon className="delete" icon={faTrash} />
+            </td>
+        </tr>
     )
 }
 

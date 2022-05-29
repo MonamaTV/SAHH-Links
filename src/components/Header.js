@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext} from 'react';
 import './Header.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../auth/Auth';
 
@@ -20,15 +21,44 @@ function Header() {
         };
     }, []);
 
+    const [menu, setMenu] = useState(false);
+    const toggleMenu = () => {
+        setMenu(!menu);
+    }
+
     return (
-        <nav className={`navbar navbar-expand ${showBackground && 'navback'} ` }>
-            <div className="container-fluid">
-                <NavLink 
-                    className="navbar-brand" 
-                    to="/"><span>SAHH</span> Links
-                </NavLink>
-                <div className="collapse navbar-collapse" id="sahhLinks">
-                <div className="navbar-nav p-5">
+        <nav className={`nav-bar ${showBackground && 'navback'} ` }>
+            <div className="container-nav">
+                <div className="toggler-menu">
+                    <button
+                        onClick={toggleMenu} 
+                        className="menu"
+                        >
+                        <FontAwesomeIcon icon={faBars} />
+                    </button>
+                    <NavLink 
+                        className="navbar-brand" 
+                        to="/"><span>Shrt</span> Link
+                    </NavLink>
+                </div>
+                <div className={`navbars ${menu && `visible-menu`}`}>
+                    <button 
+                        onClick={toggleMenu}
+                        className="close-menu"
+                    >
+                        <FontAwesomeIcon icon={faTimes} />
+                    </button>   
+                    <NavLink 
+                        to="/" 
+                        className="nav-link" 
+                        exact={true}
+                        activeClassName="active-link">Home
+                    </NavLink> 
+                    <NavLink 
+                        to="/about" 
+                        className="nav-link" 
+                        activeClassName="active-link">About
+                    </NavLink> 
                     <NavLink 
                         to="/faq" 
                         className="nav-link" 
@@ -38,9 +68,9 @@ function Header() {
                     {
                         currentUser? 
                             <NavLink 
-                                to="/profile" 
+                                to="/dashboard" 
                                 className="nav-link mr-auto" 
-                                activeClassName="active-link">Profile
+                                activeClassName="active-link">Dashboard
                             </NavLink>
                         :
                             <NavLink 
@@ -50,7 +80,6 @@ function Header() {
                             </NavLink>
                     }
                 </div> 
-                </div>
             </div>
         </nav>
     )

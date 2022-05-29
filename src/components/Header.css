@@ -1,44 +1,115 @@
-.navbar {
-  position: fixed !important;
-  top: 0;
-  height: 100px;
-  z-index: 10;
-  width: 100%;
-}
 .navback {
   transition: all ease-in 0.1s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
     inset 0 -0.7px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
-.navback .nav-link {
-  color: rgb(50, 88, 6);
-  text-transform: uppercase;
+.nav-bar {
+  height: 100px;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 3;
 }
-.navbar-toggler {
-  padding: 4px 10px !important;
-  border-radius: 4px !important;
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbars {
+  display: flex;
+  flex-direction: row;
 }
 .nav-link {
   text-transform: uppercase;
-  color: rgb(63, 119, 0);
+  color: #6f7a6b;
   margin: 0 10px;
   font-size: 13px;
 }
 .navbar-brand {
-  border-radius: 4px;
-  color: rgb(63, 119, 0) !important;
-  padding: 5px;
-
-  margin: 0 10px !important;
+  color: #6f7a6b;
+  margin: 0 20px;
 }
-.navbar-brand span {
+/* .navbar-brand span {
   border-bottom: salmon 4px solid;
   padding: 1px;
   border-top: salmon 4px solid;
-}
+} */
 .active-link {
   border-radius: 3px;
   color: #fff !important;
-  background-color: green;
+  background-color: #6f7a6b;
+}
+.menu {
+  border: 0;
+  background-color: inherit;
+  color: #6f7a6b;
+  font-size: 25px;
+  display: none;
+}
+.toggler-menu {
+  display: flex;
+  align-items: center;
+}
+.close-menu {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  border: 0;
+  background-color: inherit;
+  color: #db2312;
+  font-size: 25px;
+  display: none;
+}
+/* Transitions */
+
+@keyframes slide-in {
+  from {
+    position: fixed;
+    left: 80px;
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .nav-bar {
+    /* background-color: red; */
+  }
+  .container-nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbars {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+      inset 0 -0.7px 0 rgba(0, 0, 0, 0.1);
+    left: 0;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+      inset 0 -0.7px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+    display: none;
+    animation: slide-in 500ms ease-in normal;
+  }
+  .navbars a {
+    display: block;
+    letter-spacing: 6px;
+    font-size: 40px;
+  }
+  .close-menu,
+  .menu {
+    display: block;
+  }
+}
+.visible-menu {
+  display: block;
 }

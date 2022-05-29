@@ -1,0 +1,98 @@
+table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+thead {
+  width: 100%;
+}
+tbody tr {
+  position: relative;
+}
+
+thead tr th,
+tbody tr td {
+  border-bottom: 1px solid rgb(245, 245, 245);
+  text-align: left;
+  margin: 0;
+  padding: 0.8em 1em;
+  font-size: 14px;
+  color: #949393;
+}
+
+tbody tr button {
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  cursor: pointer;
+  display: none;
+
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+thead tr th {
+  font-weight: 600;
+}
+tbody tr:hover {
+  background-color: #8080801c !important;
+  border-radius: 5px !important;
+}
+tbody tr .button {
+  width: 0;
+  position: relative;
+}
+tbody tr:hover button {
+  display: block;
+}
+
+.button button:focus-within {
+  background-color: #fff;
+}
+.button:focus-within > .mini__menu {
+  display: block;
+}
+
+/* The row for products */
+
+.mini__menu {
+  position: absolute;
+  background-color: rgb(223, 223, 223);
+  padding: 10px;
+  border-radius: 5px;
+  right: 20px;
+  top: 5px;
+  display: none;
+}
+
+.mini__menu a,
+.mini__menu button {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+}
+.mini__menu button {
+  /* background-color: lawngreen; */
+  width: 100%;
+  border-radius: 0;
+}
+.mini__menu button.delete__product {
+  color: red;
+  cursor: pointer;
+  position: initial;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  background-color: inherit;
+}
+
+/* .name__reviews {
+    display: flex;
+    padding: 1em !important;
+    flex-direction: column;
+  } */

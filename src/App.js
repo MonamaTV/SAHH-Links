@@ -14,6 +14,7 @@ import Profile from './components/Profile';
 import CustomLink from './components/CustomLink';
 import Upload from './components/Upload';
 import PrivateRoute from './routing/PrivateRoute';
+import UserDetails from './components/UserDetails';
 import { AuthProvider } from './auth/Auth';
 import Body from './components/Body';
 import { useEffect, useState } from 'react';
@@ -21,6 +22,7 @@ import Footer from './components/Footer';
 import Faq from './components/Faq';
 import Loading from './components/Loading';
 import ChangePassword from './components/ChangePassword';
+import Socials from './components/Socials';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -60,7 +62,9 @@ function App() {
               </Route>
               {/* These are private routes for only the signed in accounts */}
               <PrivateRoute exact path="/upload"  component={Upload} />
-              <PrivateRoute exact path="/profile" component={Profile} />
+              <PrivateRoute exact path="/dashboard" component={Profile} />
+              <PrivateRoute exact path="/profile" component={UserDetails} />
+              <PrivateRoute exact path="/socials" component={Socials} />
               <Route exact path="*">
                   <Showcase />
               </Route>

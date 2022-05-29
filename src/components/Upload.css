@@ -12,11 +12,17 @@
 }
 .card-music a {
   text-decoration: none;
-  color: #fff;
+  color: #6f7a6b;
 }
 .img-review img {
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
   border-radius: 10%;
+}
+.my-control-input {
+  border: 1px solid #6f7a6b !important;
+}
+.link-preview {
+  color: #6f7a6b;
 }

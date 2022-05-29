@@ -1,5 +1,6 @@
 .faq {
-  background-color: rgba(0, 128, 0, 0.548);
+  background-color: #6f7a6b;
+  /* padding: 90px 20px; */
   padding-top: 100px;
 }
 .faq-image {
@@ -18,6 +19,12 @@
   align-items: center;
   padding: 20px;
   height: 80%;
+  margin-top: 40px;
+  color: #fff;
+}
+.faq-content h2 {
+  font-size: 34px;
+  font-weight: 600;
 }
 .faq-accordion {
   padding: 10px;
@@ -26,7 +33,7 @@
 .faq-accordion button {
   border: none;
   outline: none;
-  background: rgba(0, 128, 0, 0.548);
+  background: #6f7a6b;
   color: #fff;
   padding: 10px;
 }

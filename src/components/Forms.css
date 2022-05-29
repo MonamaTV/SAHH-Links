@@ -1,9 +1,9 @@
 .form-container {
-  box-shadow: 1rem 0.5rem 2rem #00000017;
-  margin: 150px auto;
+  /* box-shadow: 1rem 0.5rem 2rem #00000017; */
+  margin: 100px auto;
   border-radius: 1px;
   width: 35rem;
-  background-color: #70b670;
+  /* background-color: #70b670; */
   justify-self: center;
   padding: 80px 30px;
   align-self: center;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 .form-control {
-  border: none !important;
+  border: 1px solid #6f7a6b !important;
   outline: none !important;
   width: 100%;
   font-weight: 400 !important;
@@ -21,7 +21,7 @@
 }
 input[type="file"]::-webkit-file-upload-button {
   outline: none;
-  background-color: #005f00 !important;
+  background-color: #6f7a6b !important;
   border: none !important;
   border-radius: 3px;
   height: calc(2.3rem + 1px) !important;
@@ -41,6 +41,7 @@ textarea.form-control {
 .form-floating > label {
   padding: 0.7rem 0.75rem !important;
 }
+
 .form-control:focus {
   box-shadow: none !important;
 }
@@ -50,7 +51,7 @@ select.my-select-input {
   font-size: 15px;
   height: 49.7px;
   border: none;
-  background-color: #005f00;
+  background-color: #6f7a6b;
   border-radius: 3px;
   width: 25%;
   outline: none;
@@ -64,7 +65,7 @@ input.my-control-input {
   width: 75%;
 }
 .form-button button {
-  background-color: #005f00;
+  background-color: #6f7a6b;
   color: #fff;
   border: none;
   outline: none !important;
@@ -79,8 +80,10 @@ input.my-control-input {
 .form-sign button {
   border-radius: 5px;
   background-color: transparent;
-  color: #e0dede;
+  color: #0e0606c2;
   border: none;
+  display: flex;
+  align-items: center;
 }
 .google-icon {
   color: #fff;
@@ -109,6 +112,9 @@ input.my-control-input {
   padding: 0px;
   border-radius: 50%;
   animation: motion 0.6s linear infinite;
+}
+.long-input {
+  width: 100%;
 }
 
 @keyframes motion {

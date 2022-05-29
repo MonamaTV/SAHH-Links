@@ -158,7 +158,8 @@ function Upload() {
                         <h3>Upload Details</h3>
                         <div className="form-floating mb-2">
                            
-                            <input 
+                            <input
+                                className="long-input" 
                                 onChange={handleImage}
                                 type="file" 
                                 accept="image/*" 

@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 
 function Showcase() {
     return (
-        <div className="showcase my-margin mb-5">
+        <div className="showcase mb-5">
              <Helmet>
                 <title>SAHHLinks - share your music links in the most convienient way. Sign up for free!</title>
                 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
@@ -23,7 +23,9 @@ function Showcase() {
             <div className="container-fluid">
                 <div className="row">
                    <div className="col-md-7 my-5">
-                        <img src={mainImage} width="100%" height="100%" alt="showcase "/>
+                        <img src={mainImage} width="100%" height="100%" alt="showcase " style={{
+                            // filter: "grayscale(50%)"
+                        }}/>
                     </div>
                     <div className="col-md-5">
                        <div className="showcase-content my-2">    

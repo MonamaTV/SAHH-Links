@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import firebase from './firebase';
 
-const useFirestore = (collection, uid, limit = 5, page = 1) => {
+const useFetchLinks = (collection, uid) => {
     const [documents, setDocuments] = useState([]);
     const firestoreRef = firebase.firestore().collection(collection);
 
@@ -18,8 +18,8 @@ const useFirestore = (collection, uid, limit = 5, page = 1) => {
             setDocuments(dbCollections);
         })
         return () => firestoreRef;
-    },[collection , uid, firestoreRef, limit]);
+    },[collection , uid, firestoreRef]);
     
     return { documents };
 }
-export default useFirestore;
+export default useFetchLinks;

@@ -7,7 +7,7 @@ function Faq() {
 
     const faqs = [
         { 
-            question: "What is an SAHHLink",
+            question: "What is an Shrt Link",
             answer: "It is a smart link that has links to all your music on the streaming platforms you chose to use"
         },
         { 

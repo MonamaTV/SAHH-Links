@@ -2,11 +2,13 @@
   margin-top: 35px;
   border-radius: 1px;
   padding: 10px;
-  border: 1px solid rgba(216, 207, 207, 0.582);
   position: sticky;
-  top: 110px;
+  top: 120px;
+  margin-right: 10px;
+  width: 350px;
   background-color: #fff !important;
 }
+
 .bio-card,
 .bio-image {
   flex-direction: column;
@@ -52,4 +54,56 @@
 }
 .onclick-verification:active {
   color: rgb(63, 119, 0);
+}
+
+/* The nav links */
+.user-profile-img img {
+  width: 120px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.create-link-btn {
+  background-color: #6f7a6b;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.create-link-btn:hover {
+  color: #fff;
+  background-color: #6f7a6bc0;
+  transition: background 200ms ease-in-out;
+}
+.user-links {
+  list-style: none;
+  padding: 10px 0;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+.user-links li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+.user-links li > * {
+  color: #6f7a6b;
+  font-size: 16px;
+
+  text-decoration: none;
+}
+.user-links li a {
+  display: flex;
+  align-items: center;
+}
+.user-links img {
+  width: 20px;
+  margin-right: 5px;
+}
+.bio-descri p {
+  color: #6f7a6bdc;
+  font-size: 14px;
 }

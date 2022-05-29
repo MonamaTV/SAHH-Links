@@ -26,10 +26,32 @@
   font-size: 17px;
 }
 
+.background {
+  background-color: #f6f8f5;
+  border-radius: 5px;
+  /* padding: 0 90px; */
+}
+.background h4 {
+  color: #6f7a6bd3;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0.7em 0;
+}
+
 #snackbar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Pagination */
+.pagination button {
+  background: #6f7a6b;
+  border: none;
+  color: #fff;
+  padding: 2px 10px;
+  margin: 3px 0 14px 13px;
+  border-radius: 5px;
 }
 
 @-webkit-keyframes fadein {
