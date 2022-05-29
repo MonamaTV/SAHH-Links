@@ -6,6 +6,6 @@ This is a smartlink (A link that connects to multiple links) project which is bu
 
 - ReactJS
 - Bootstrap/CSS
-- Firebase (both for storage/firestore and authentication)
+- Firebase (both for storage, firestore and authentication)
 - React Router
 - Netlify
